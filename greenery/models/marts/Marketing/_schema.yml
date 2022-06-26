@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+  - name: user_order_facts
+    description: "The model joins together user and order data into one table"
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null

@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: addresses
+  - name: stg_addresses
     description: "address details"
     columns:
       - name: address_id
@@ -11,7 +11,7 @@ models:
           - unique
           - not_null
 
-  - name: events
+  - name: stg_events
     description: "events"
     columns:
       - name: event_id
@@ -20,7 +20,7 @@ models:
           - unique
           - not_null
 
-  - name: order_items
+  - name: stg_order_items
     description: "items contained in each order"
     columns:
       - name: order_id
@@ -29,7 +29,7 @@ models:
           - unique
           - not_null
 
-  - name: orders
+  - name: stg_orders
     description: "order details"
     columns:
       - name: order_id
@@ -38,7 +38,7 @@ models:
           - unique
           - not_null
 
-  - name: products
+  - name: stg_products
     description: "product details"
     columns:
       - name: product_id
@@ -47,7 +47,7 @@ models:
           - unique
           - not_null
 
-  - name: promos
+  - name: stg_promos
     description: "promos"
     columns:
       - name: promo_id
@@ -56,7 +56,7 @@ models:
           - unique
           - not_null
 
-  - name: users
+  - name: stg_users
     description: "user details"
     columns:
       - name: user_id

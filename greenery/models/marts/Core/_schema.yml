@@ -1,0 +1,32 @@
+
+version: 2
+
+models:
+  - name: dim_products
+    description: "Product dimensions"
+    columns:
+      - name: product_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_users
+    description: "User dimensions including address details"
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_orders
+    description: "Order level facts including promo details"
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  

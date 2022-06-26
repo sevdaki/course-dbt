@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+  - name: fact_page_views
+    description: "The model filters events to page views"
+    columns:
+      - name: event_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
